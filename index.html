@@ -2,64 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aswin Prasath | Data Scientist Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aswin Prasath | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <h1>👋 Hi, I'm <span>Aswin Prasath</span></h1>
-    <h2>Aspiring Data Scientist | AI Enthusiast | Streamlit Developer</h2>
-
-    <section>
-      <h3>🧑‍💼 About Me</h3>
-      <p>I'm a passionate Data Science intern with hands-on experience across 8+ real-world projects. I enjoy solving business problems using Python, SQL, ML, and visualization tools like Power BI and Tableau. I love turning raw data into clear, actionable insights.</p>
-    </section>
-
-    <section>
-      <h3>🛠️ Skills</h3>
-      <ul>
-        <li><strong>Programming:</strong> Python, Pandas, NumPy, Streamlit, SQL</li>
-        <li><strong>ML & Tools:</strong> Scikit-learn, XGBoost, GitHub, Google Colab</li>
-        <li><strong>Visualization:</strong> Power BI, Tableau, Matplotlib</li>
-        <li><strong>Platforms:</strong> Jupyter, Anaconda, Excel</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>🚀 Projects</h3>
-      <ul>
-        <li><strong>AI Echo:</strong> Sentiment analysis app for ChatGPT user reviews</li>
-        <li><strong>Employee Attrition Predictor:</strong> HR-based ML dashboard for employee risk prediction</li>
-        <li><strong>AutoVlogAI:</strong> AI-based motovlog editor for emotional video segments (In progress)</li>
-        <li><strong>RedBus Scraper App:</strong> Real-time fare and route filter app using SQL + Streamlit</li>
-        <li><strong>SecureCheck:</strong> Police post digital ledger using SQLite + Streamlit</li>
-        <li><strong>Agricultural Insights:</strong> SQL + Power BI dashboard for farmer advisory</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>📄 Resume</h3>
-      <p><a href="Aswinprasath_V_Resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
-    </section>
-
-    <section>
-      <h3>🏆 Certifications & Internships</h3>
-      <ul>
-        <li><strong>MedTourEasy (April 2025):</strong> Data Analytics Trainee – received Recommendation & Appreciation letters</li>
-        <li><strong>Internshala Data Science Virtual Internship:</strong> Hands-on with Python, SQL, ML</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>📫 Contact</h3>
-      <p>Email: <a href="mailto:aswinprasath1590@gmail.com">aswinprasath1590@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/Aswinprasath31" target="_blank">@Aswinprasath31</a></p>
-    </section>
-
-    <footer>
-      <p>© 2025 Aswin Prasath. All rights reserved.</p>
-    </footer>
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider"></span>
+    </label>
+    <span class="toggle-label">🌙 Dark Mode</span>
   </div>
+
+  <header>
+    <h1>👋 Hi, I'm <span>Aswin Prasath</span></h1>
+    <p>Aspiring Data Scientist | AI Enthusiast | Streamlit Developer</p>
+  </header>
+
+  <section class="about">
+    <h2>🧑‍💼 About Me</h2>
+    <p>
+      Passionate Data Science intern with 8+ hands-on projects. I build AI-powered apps and dashboards using Python, SQL, Streamlit, and ML tools.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>🛠️ Skills</h2>
+    <ul>
+      <li>Python, Pandas, NumPy, SQL</li>
+      <li>Streamlit, Scikit-learn, XGBoost</li>
+      <li>Power BI, Tableau, Matplotlib</li>
+      <li>GitHub, Colab, Jupyter, Excel</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/ai_echo.png" alt="AI Echo">
+        <h3>AI Echo</h3>
+        <p>ChatGPT review sentiment analyzer with ML.</p>
+        <a href="https://github.com/Aswinprasath31/ai-echo" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/attrition.png" alt="Attrition">
+        <h3>Employee Attrition</h3>
+        <p>ML + Streamlit app for HR analytics.</p>
+        <a href="https://github.com/Aswinprasath31/employee-attrition" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/autovlogai.png" alt="AutoVlogAI">
+        <h3>AutoVlogAI</h3>
+        <p>AI-powered emotional motovlog editor.</p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/redbus.png" alt="Redbus">
+        <h3>Redbus Scraper</h3>
+        <p>Dynamic filter app using SQL + Streamlit.</p>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="resume">
+    <h2>📄 Resume</h2>
+    <a href="Aswinprasath_V_Resume.pdf" download class="btn">Download My Resume</a>
+  </section>
+
+  <section class="contact">
+    <h2>📬 Contact Me</h2>
+    <form action="https://formspree.io/f/xdoqzkng" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Aswin Prasath. All rights reserved.</p>
+  </footer>
 </body>
 </html>
