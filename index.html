@@ -9,6 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <header class="header">
+    <h1>👋 Hi, I'm <span>Aswin Prasath</span></h1>
+    <p>Aspiring Data Scientist | AI Enthusiast | Streamlit Developer</p>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <div class="toggle-container">
     <label class="switch">
       <input type="checkbox" id="darkToggle">
@@ -17,67 +28,517 @@
     <span class="toggle-label">🌙 Dark Mode</span>
   </div>
 
-  <header>
-    <h1>👋 Hi, I'm <span>Aswin Prasath</span></h1>
-    <p>Aspiring Data Scientist | AI Enthusiast | Streamlit Developer</p>
-  </header>
-
-  <section class="about">
+  <section id="about">
     <h2>🧑‍💼 About Me</h2>
     <p>
-      Passionate Data Science intern with 8+ hands-on projects. I build AI-powered apps and dashboards using Python, SQL, Streamlit, and ML tools.
+      Passionate Data Science intern with 8+ real-world projects. Skilled in Python, SQL, ML, and visualization tools. I enjoy turning data into actionable insights.
     </p>
   </section>
 
-  <section class="skills">
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li>Python, Pandas, NumPy, SQL</li>
-      <li>Streamlit, Scikit-learn, XGBoost</li>
-      <li>Power BI, Tableau, Matplotlib</li>
-      <li>GitHub, Colab, Jupyter, Excel</li>
-    </ul>
-  </section>
-
-  <section class="projects">
+  <section id="projects">
     <h2>🚀 Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <img src="images/ai_echo.png" alt="AI Echo">
+        <img src="images/ai_echo.png" alt="AI Echo" />
         <h3>AI Echo</h3>
-        <p>ChatGPT review sentiment analyzer with ML.</p>
+        <p>ChatGPT sentiment analyzer using ML and Streamlit.</p>
         <a href="https://github.com/Aswinprasath31/ai-echo" target="_blank">GitHub</a>
       </div>
-
       <div class="project-card">
-        <img src="images/attrition.png" alt="Attrition">
+        <img src="images/attrition.png" alt="Attrition" />
         <h3>Employee Attrition</h3>
-        <p>ML + Streamlit app for HR analytics.</p>
+        <p>HR analytics and prediction with ML + Streamlit.</p>
         <a href="https://github.com/Aswinprasath31/employee-attrition" target="_blank">GitHub</a>
       </div>
-
       <div class="project-card">
-        <img src="images/autovlogai.png" alt="AutoVlogAI">
+        <img src="images/autovlogai.png" alt="AutoVlogAI" />
         <h3>AutoVlogAI</h3>
-        <p>AI-powered emotional motovlog editor.</p>
+        <p>AI video editor for emotional moments. (In Progress)</p>
         <a href="#">Coming Soon</a>
       </div>
-
       <div class="project-card">
-        <img src="images/redbus.png" alt="Redbus">
-        <h3>Redbus Scraper</h3>
-        <p>Dynamic filter app using SQL + Streamlit.</p>
-        <a href="#">GitHub</a>
+        <img src="images/redbus.png" alt="RedBus App" />
+        <h3>RedBus Scraper</h3>
+        <p>Live route & fare filter with SQL + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/redbus-scraper" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="SecureCheck" />
+        <h3>SecureCheck</h3>
+        <p>Police post logging system with SQLite + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/securecheck" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Agri SQL" />
+        <h3>Agricultural Insights</h3>
+        <p>SQL + Power BI dashboard for crop trends.</p>
+        <a href="https://github.com/Aswinprasath31/agri-sql" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="ABG Motors" />
+        <h3>Market Entry Analysis</h3>
+        <p>Capstone project with prediction & Tableau.</p>
+        <a href="https://github.com/Aswinprasath31/abg-motors" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Disease Prediction" />
+        <h3>Disease Prediction</h3>
+        <p>Predicts kidney, liver, and Parkinson’s diseases.</p>
+        <a href="https://github.com/Aswinprasath31/multiple-disease" target="_blank">GitHub</a>
       </div>
     </div>
   </section>
 
-  <section class="resume">
+  <section id="resume">
     <h2>📄 Resume</h2>
     <a href="Aswinprasath_V_Resume.pdf" download class="btn">Download My Resume</a>
   </section>
 
-  <section class="contact">
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form action="https://formspree.io/f/xdoqzkng" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Aswin Prasath. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aswin Prasath | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <h1>👋 Hi, I'm <span>Aswin Prasath</span></h1>
+    <p>Aspiring Data Scientist | AI Enthusiast | Streamlit Developer</p>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider"></span>
+    </label>
+    <span class="toggle-label">🌙 Dark Mode</span>
+  </div>
+
+  <section id="about">
+    <h2>🧑‍💼 About Me</h2>
+    <p>
+      Passionate Data Science intern with 8+ real-world projects. Skilled in Python, SQL, ML, and visualization tools. I enjoy turning data into actionable insights.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/ai_echo.png" alt="AI Echo" />
+        <h3>AI Echo</h3>
+        <p>ChatGPT sentiment analyzer using ML and Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/ai-echo" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/attrition.png" alt="Attrition" />
+        <h3>Employee Attrition</h3>
+        <p>HR analytics and prediction with ML + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/employee-attrition" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/autovlogai.png" alt="AutoVlogAI" />
+        <h3>AutoVlogAI</h3>
+        <p>AI video editor for emotional moments. (In Progress)</p>
+        <a href="#">Coming Soon</a>
+      </div>
+      <div class="project-card">
+        <img src="images/redbus.png" alt="RedBus App" />
+        <h3>RedBus Scraper</h3>
+        <p>Live route & fare filter with SQL + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/redbus-scraper" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="SecureCheck" />
+        <h3>SecureCheck</h3>
+        <p>Police post logging system with SQLite + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/securecheck" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Agri SQL" />
+        <h3>Agricultural Insights</h3>
+        <p>SQL + Power BI dashboard for crop trends.</p>
+        <a href="https://github.com/Aswinprasath31/agri-sql" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="ABG Motors" />
+        <h3>Market Entry Analysis</h3>
+        <p>Capstone project with prediction & Tableau.</p>
+        <a href="https://github.com/Aswinprasath31/abg-motors" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Disease Prediction" />
+        <h3>Disease Prediction</h3>
+        <p>Predicts kidney, liver, and Parkinson’s diseases.</p>
+        <a href="https://github.com/Aswinprasath31/multiple-disease" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>📄 Resume</h2>
+    <a href="Aswinprasath_V_Resume.pdf" download class="btn">Download My Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form action="https://formspree.io/f/xdoqzkng" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Aswin Prasath. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aswin Prasath | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <h1>👋 Hi, I'm <span>Aswin Prasath</span></h1>
+    <p>Aspiring Data Scientist | AI Enthusiast | Streamlit Developer</p>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider"></span>
+    </label>
+    <span class="toggle-label">🌙 Dark Mode</span>
+  </div>
+
+  <section id="about">
+    <h2>🧑‍💼 About Me</h2>
+    <p>
+      Passionate Data Science intern with 8+ real-world projects. Skilled in Python, SQL, ML, and visualization tools. I enjoy turning data into actionable insights.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/ai_echo.png" alt="AI Echo" />
+        <h3>AI Echo</h3>
+        <p>ChatGPT sentiment analyzer using ML and Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/ai-echo" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/attrition.png" alt="Attrition" />
+        <h3>Employee Attrition</h3>
+        <p>HR analytics and prediction with ML + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/employee-attrition" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/autovlogai.png" alt="AutoVlogAI" />
+        <h3>AutoVlogAI</h3>
+        <p>AI video editor for emotional moments. (In Progress)</p>
+        <a href="#">Coming Soon</a>
+      </div>
+      <div class="project-card">
+        <img src="images/redbus.png" alt="RedBus App" />
+        <h3>RedBus Scraper</h3>
+        <p>Live route & fare filter with SQL + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/redbus-scraper" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="SecureCheck" />
+        <h3>SecureCheck</h3>
+        <p>Police post logging system with SQLite + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/securecheck" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Agri SQL" />
+        <h3>Agricultural Insights</h3>
+        <p>SQL + Power BI dashboard for crop trends.</p>
+        <a href="https://github.com/Aswinprasath31/agri-sql" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="ABG Motors" />
+        <h3>Market Entry Analysis</h3>
+        <p>Capstone project with prediction & Tableau.</p>
+        <a href="https://github.com/Aswinprasath31/abg-motors" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Disease Prediction" />
+        <h3>Disease Prediction</h3>
+        <p>Predicts kidney, liver, and Parkinson’s diseases.</p>
+        <a href="https://github.com/Aswinprasath31/multiple-disease" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>📄 Resume</h2>
+    <a href="Aswinprasath_V_Resume.pdf" download class="btn">Download My Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form action="https://formspree.io/f/xdoqzkng" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Aswin Prasath. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aswin Prasath | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <h1>👋 Hi, I'm <span>Aswin Prasath</span></h1>
+    <p>Aspiring Data Scientist | AI Enthusiast | Streamlit Developer</p>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider"></span>
+    </label>
+    <span class="toggle-label">🌙 Dark Mode</span>
+  </div>
+
+  <section id="about">
+    <h2>🧑‍💼 About Me</h2>
+    <p>
+      Passionate Data Science intern with 8+ real-world projects. Skilled in Python, SQL, ML, and visualization tools. I enjoy turning data into actionable insights.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/ai_echo.png" alt="AI Echo" />
+        <h3>AI Echo</h3>
+        <p>ChatGPT sentiment analyzer using ML and Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/ai-echo" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/attrition.png" alt="Attrition" />
+        <h3>Employee Attrition</h3>
+        <p>HR analytics and prediction with ML + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/employee-attrition" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/autovlogai.png" alt="AutoVlogAI" />
+        <h3>AutoVlogAI</h3>
+        <p>AI video editor for emotional moments. (In Progress)</p>
+        <a href="#">Coming Soon</a>
+      </div>
+      <div class="project-card">
+        <img src="images/redbus.png" alt="RedBus App" />
+        <h3>RedBus Scraper</h3>
+        <p>Live route & fare filter with SQL + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/redbus-scraper" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="SecureCheck" />
+        <h3>SecureCheck</h3>
+        <p>Police post logging system with SQLite + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/securecheck" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Agri SQL" />
+        <h3>Agricultural Insights</h3>
+        <p>SQL + Power BI dashboard for crop trends.</p>
+        <a href="https://github.com/Aswinprasath31/agri-sql" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="ABG Motors" />
+        <h3>Market Entry Analysis</h3>
+        <p>Capstone project with prediction & Tableau.</p>
+        <a href="https://github.com/Aswinprasath31/abg-motors" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Disease Prediction" />
+        <h3>Disease Prediction</h3>
+        <p>Predicts kidney, liver, and Parkinson’s diseases.</p>
+        <a href="https://github.com/Aswinprasath31/multiple-disease" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>📄 Resume</h2>
+    <a href="Aswinprasath_V_Resume.pdf" download class="btn">Download My Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form action="https://formspree.io/f/xdoqzkng" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Aswin Prasath. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aswin Prasath | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <h1>👋 Hi, I'm <span>Aswin Prasath</span></h1>
+    <p>Aspiring Data Scientist | AI Enthusiast | Streamlit Developer</p>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider"></span>
+    </label>
+    <span class="toggle-label">🌙 Dark Mode</span>
+  </div>
+
+  <section id="about">
+    <h2>🧑‍💼 About Me</h2>
+    <p>
+      Passionate Data Science intern with 8+ real-world projects. Skilled in Python, SQL, ML, and visualization tools. I enjoy turning data into actionable insights.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/ai_echo.png" alt="AI Echo" />
+        <h3>AI Echo</h3>
+        <p>ChatGPT sentiment analyzer using ML and Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/ai-echo" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/attrition.png" alt="Attrition" />
+        <h3>Employee Attrition</h3>
+        <p>HR analytics and prediction with ML + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/employee-attrition" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/autovlogai.png" alt="AutoVlogAI" />
+        <h3>AutoVlogAI</h3>
+        <p>AI video editor for emotional moments. (In Progress)</p>
+        <a href="#">Coming Soon</a>
+      </div>
+      <div class="project-card">
+        <img src="images/redbus.png" alt="RedBus App" />
+        <h3>RedBus Scraper</h3>
+        <p>Live route & fare filter with SQL + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/redbus-scraper" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="SecureCheck" />
+        <h3>SecureCheck</h3>
+        <p>Police post logging system with SQLite + Streamlit.</p>
+        <a href="https://github.com/Aswinprasath31/securecheck" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Agri SQL" />
+        <h3>Agricultural Insights</h3>
+        <p>SQL + Power BI dashboard for crop trends.</p>
+        <a href="https://github.com/Aswinprasath31/agri-sql" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="ABG Motors" />
+        <h3>Market Entry Analysis</h3>
+        <p>Capstone project with prediction & Tableau.</p>
+        <a href="https://github.com/Aswinprasath31/abg-motors" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Disease Prediction" />
+        <h3>Disease Prediction</h3>
+        <p>Predicts kidney, liver, and Parkinson’s diseases.</p>
+        <a href="https://github.com/Aswinprasath31/multiple-disease" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>📄 Resume</h2>
+    <a href="Aswinprasath_V_Resume.pdf" download class="btn">Download My Resume</a>
+  </section>
+
+  <section id="contact">
     <h2>📬 Contact Me</h2>
     <form action="https://formspree.io/f/xdoqzkng" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
