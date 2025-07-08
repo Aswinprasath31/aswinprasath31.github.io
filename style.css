@@ -283,3 +283,32 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+/* 📄 Floating Resume Button */
+.floating-resume {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 999;
+}
+
+.floating-resume:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+body.dark-mode .floating-resume {
+  background-color: #26c6da;
+  color: #000;
+}
