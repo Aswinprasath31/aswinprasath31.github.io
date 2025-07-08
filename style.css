@@ -312,3 +312,31 @@ body.dark-mode .floating-resume {
   background-color: #26c6da;
   color: #000;
 }
+
+
+.contact-details {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  letter-spacing: 0.5px;
+}
+
+.contact-details a {
+  color: #0073e6;  /* nice blue link color */
+  text-decoration: none;
+  margin: 0 6px;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
+
+.contact-details p {
+  margin: 0;
+}
