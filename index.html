@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin Prasath V - AI Strategist & Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Dark Slate & Electric Cyan -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #e2e8f0; /* slate-200 */
+        }
+        .section-dark-bg {
+            background-color: #1a202c; /* slightly lighter dark tone */
+        }
+        .modal-backdrop {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .modal-content {
+            transition: transform 0.3s ease-in-out;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 6px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #06b6d4; /* cyan-500 */
+            border: 3px solid #0f172a; /* slate-900 */
+            z-index: 10;
+        }
+        .icon-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #264d60; /* custom dark blue for icons */
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: #22d3ee; /* cyan-400 */
+            margin-bottom: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .progress-bar-container {
+            background-color: #475569; /* slate-600 */
+            border-radius: 9999px; /* full rounded */
+            height: 8px; /* h-2 */
+            overflow: hidden;
+            width: 100%;
+        }
+        .progress-bar {
+            background-color: #06b6d4; /* cyan-500 */
+            height: 100%;
+            border-radius: 9999px; /* full rounded */
+            transition: width 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-slate-900/80 backdrop-blur-lg shadow-lg sticky top-0 z-50 border-b border-slate-700">
+        <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row md:justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-white mb-4 md:mb-0">Aswin Prasath V</a>
+            <div class="flex flex-wrap justify-center md:flex-grow md:justify-center space-x-4 md:space-x-8 text-sm md:text-base">
+                <a href="#about" class="text-slate-300 hover:text-cyan-400 transition-colors py-1">About</a>
+                <a href="#experience" class="text-slate-300 hover:text-cyan-400 transition-colors py-1">Experience</a>
+                <a href="#projects" class="text-slate-300 hover:text-cyan-400 transition-colors py-1">Projects</a>
+                <a href="#skills" class="text-slate-300 hover:text-cyan-400 transition-colors py-1">Skills</a>
+                <a href="#certifications" class="text-slate-300 hover:text-cyan-400 transition-colors py-1">Certifications</a>
+                <a href="#contact" class="text-slate-300 hover:text-cyan-400 transition-colors py-1">Contact</a>
+            </div>
+            <a href="#contact-form-section" class="hidden md:block bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-cyan-700 transition-colors text-sm font-medium shadow-md ml-4">Get In Touch</a>
+            <button id="mobile-menu-button" class="md:hidden text-slate-200 mt-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-slate-800 text-center">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400">About</a>
+            <a href="#experience" class="block py-2 text-slate-300 hover:text-cyan-400">Experience</a>
+            <a href="#projects" class="block py-2 text-slate-300 hover:text-cyan-400">Projects</a>
+            <a href="#skills" class="block py-2 text-slate-300 hover:text-cyan-400">Skills</a>
+            <a href="#certifications" class="block py-2 text-slate-300 hover:text-cyan-400">Certifications</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-cyan-400">Contact</a>
+            <a href="#contact-form-section" class="block mt-2 bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-cyan-700 transition-colors text-sm font-medium shadow-md">Get In Touch</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="py-20 md:py-32 text-center bg-gradient-to-br from-slate-900 to-gray-900">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white">Aswin Prasath V</h1>
+                <p class="mt-4 text-2xl md:text-3xl font-medium text-cyan-400">Aspiring AI Strategist & Data Scientist</p>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-300">
+                    Hands-on experience in Python, SQL, Machine Learning, Streamlit, and NLP. Currently pursuing specialization in Generative AI and AI Strategy. Actively seeking full-time data roles to drive AI innovation.
+                </p>
+                <div class="mt-8 text-slate-400 space-y-2">
+                    <p>Chennai, Tamil Nadu, India</p>
+                    <p>+91 74483 26548</p>
+                    <p>aswinprasath1590@gmail.com</p>
+                </div>
+                <div class="mt-8 flex justify-center space-x-6">
+                    <a href="https://aswinprasath31.github.io/" target="_blank" class="bg-cyan-600 text-white px-6 py-3 rounded-lg hover:bg-cyan-700 transition-colors font-semibold shadow-md">View Portfolio</a>
+                    <a href="https://github.com/Aswinprasath31" target="_blank" class="bg-slate-700 text-white px-6 py-3 rounded-lg hover:bg-slate-600 transition-colors font-semibold shadow-md">GitHub</a>
+                    <a href="https://www.linkedin.com/in/aswinprasathv" target="_blank" class="bg-slate-700 text-white px-6 py-3 rounded-lg hover:bg-slate-600 transition-colors font-semibold shadow-md">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 section-dark-bg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white">About Me</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-300 text-center">
+                    AI strategy & data science, with hands-on experience in machine learning, analytics, and AI innovation
+                </p>
+                <div class="mt-12 max-w-4xl mx-auto bg-slate-800 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-4">Career Objective</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        <span class="font-semibold text-cyan-400">Career Transition:</span> From electrical engineering background to AI strategist & data scientist, bringing diverse technical experience from manufacturing and industrial operations. Hands-on experience in Python, SQL, Machine Learning, Streamlit, and NLP. Completed certified courses from DataMites and successfully delivered multiple real-world projects and internships. Currently pursuing specialization in Generative AI and AI Strategy. Actively seeking a full-time data role to apply analytical thinking and drive AI innovation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white">Education</h2>
+                <div class="mt-12 max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-start">
+                        <div class="icon-box">🎓</div>
+                        <h3 class="text-xl font-semibold text-white mt-2">BCA Data Science (Distance Education)</h3>
+                        <p class="text-slate-300 mt-1">SRM Institute of Science and Technology, Kattankulathur</p>
+                        <p class="text-sm text-slate-400">Graduation Year: 2026</p>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-start">
+                        <div class="icon-box">⚙️</div>
+                        <h3 class="text-xl font-semibold text-white mt-2">Diploma in Electrical and Electronics Engineering</h3>
+                        <p class="text-slate-300 mt-1">Srinivasan Polytechnic College, Perambalur</p>
+                        <p class="text-sm text-slate-400">2018 – 2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 section-dark-bg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white">Experience</h2>
+                <p class="text-center mt-4 text-slate-300 max-w-2xl mx-auto">
+                    <span class="font-semibold text-cyan-400">Career Transformation:</span> From electrical engineering and manufacturing to data science and AI specialization. My career journey reflects a strategic transformation from diverse professional roles to a focused path in AI and Data Science. This section highlights both my foundational experiences and my recent immersion into the world of data, demonstrating a blend of operational acumen and cutting-edge technical skills.
+                </p>
+                <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <!-- IT Experience Column -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6 text-center">Internship Experience (IT)</h3>
+                        <div class="space-y-8">
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                                <h4 class="text-xl font-semibold text-white">Data Analyst Intern</h4>
+                                <p class="text-cyan-400">CodTech</p>
+                                <p class="text-sm text-slate-400">Remote | Mar 2025 – Apr 2025 | Internship</p>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Key Achievements:</p>
+                                <ul class="list-disc list-inside text-slate-300 space-y-1">
+                                    <li>Performed Big Data analysis using PySpark on large-scale CSV datasets</li>
+                                    <li>Built ML models for classification and regression</li>
+                                    <li>Designed an interactive dashboard using Plotly & Dash in Google Colab</li>
+                                    <li>Conducted sentiment analysis using NLP techniques</li>
+                                </ul>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Technologies Used:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">PySpark</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Plotly</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Dash</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Sentiment Analysis</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                                <h4 class="text-xl font-semibold text-white">Data Science Intern</h4>
+                                <p class="text-cyan-400">Internshala</p>
+                                <p class="text-sm text-slate-400">Virtual | Jan 2025 – Feb 2025 | Virtual Internship</p>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Key Achievements:</p>
+                                <ul class="list-disc list-inside text-slate-300 space-y-1">
+                                    <li>Cleaned and visualized real-world datasets</li>
+                                    <li>Implemented classification models and built a Streamlit app</li>
+                                    <li>Final project focused on EDA and model deployment</li>
+                                </ul>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Technologies Used:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Data Cleaning</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Data Visualization</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Classification</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">EDA</span>
+                                    <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Model Deployment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Non-IT Experience Column -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6 text-center">Previous Professional Experience (Non-IT)</h3>
+                        <div class="space-y-8">
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                                <h4 class="text-xl font-semibold text-white">Quality Engineer</h4>
+                                <p class="text-cyan-400">Fuji Electric India Pvt. Ltd.</p>
+                                <p class="text-sm text-slate-400">Chennai | Jul 2023 – Mar 2025 | Full-time</p>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Key Achievements:</p>
+                                <ul class="list-disc list-inside text-slate-300 space-y-1">
+                                    <li>Monitored product quality in high-tech manufacturing environment</li>
+                                    <li>Reported defects and implemented quality improvement measures</li>
+                                    <li>Supported production teams in maintaining quality standards</li>
+                                    <li>Developed analytical skills in quality control processes</li>
+                                </ul>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Skills Developed:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Quality Control</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Manufacturing</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Process Improvement</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Team Collaboration</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                                <h4 class="text-xl font-semibold text-white">Apprentice Electrical Technician</h4>
+                                <p class="text-cyan-400">Indian Oil Corporation Ltd.</p>
+                                <p class="text-sm text-slate-400">Chennai | Feb 2022 – Mar 2023 | Apprenticeship</p>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Key Achievements:</p>
+                                <ul class="list-disc list-inside text-slate-300 space-y-1">
+                                    <li>Assisted in electrical maintenance of LPG refilling operations</li>
+                                    <li>Ensured safety compliance in industrial operations</li>
+                                    <li>Gained experience in electrical systems and safety protocols</li>
+                                    <li>Developed technical problem-solving skills</li>
+                                </ul>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Skills Developed:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Electrical Maintenance</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Safety Compliance</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Industrial Operations</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Technical Support</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                                <h4 class="text-xl font-semibold text-white">Sales Manager</h4>
+                                <p class="text-cyan-400">NR Flowers (Wholesale Flower Shop)</p>
+                                <p class="text-sm text-slate-400">Chennai | Jul 2020 – Feb 2022 | Full-time</p>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Key Achievements:</p>
+                                <ul class="list-disc list-inside text-slate-300 space-y-1">
+                                    <li>Handled B2C and wholesale sales operations</li>
+                                    <li>Managed client relationships and improved customer satisfaction</li>
+                                    <li>Improved daily sales revenue through strategic planning</li>
+                                    <li>Developed leadership and business management skills</li>
+                                </ul>
+                                <p class="font-semibold text-slate-200 mt-4 mb-2">Skills Developed:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Sales Management</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Client Relations</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Business Operations</span>
+                                    <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Team Leadership</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white">Projects</h2>
+                <p class="text-center mt-4 text-slate-300 max-w-2xl mx-auto">
+                    Real-world data science projects showcasing end-to-end ML workflows and deployment.
+                </p>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-6 text-center">Featured Projects</h3>
+                <div id="featured-project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer project-card" data-project-id="securecheck">
+                        <h4 class="text-xl font-bold text-white mb-2">SecureCheck – Python-SQL Digital Ledger for Police Logs</h4>
+                        <p class="text-slate-300 text-sm flex-grow">
+                            Built a centralized Streamlit dashboard for recording, analyzing, and exporting police check post logs with SQLite backend and real-time search and filtering capabilities.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">SQLite</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">SQL</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Dashboard</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <a href="https://github.com/Aswinprasath31" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">GitHub &rarr;</a>
+                            <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Demo &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer project-card" data-project-id="aiecho">
+                        <h4 class="text-xl font-bold text-white mb-2">AI Echo – ChatGPT User Review Sentiment Analyzer</h4>
+                        <p class="text-slate-300 text-sm flex-grow">
+                            Performed NLP on user reviews to classify sentiments. Trained multiple ML models and deployed via Streamlit for real-time sentiment analysis.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Sentiment Analysis</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <a href="https://github.com/Aswinprasath31" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">GitHub &rarr;</a>
+                            <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Demo &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer project-card" data-project-id="autovlogai">
+                        <h4 class="text-xl font-bold text-white mb-2">AutoVlogAI – AI-Powered Motovlog Editor</h4>
+                        <p class="text-slate-300 text-sm flex-grow">
+                            Whisper transcription → Emotion detection → Auto BGM → Final video. Uses HuggingFace Transformers, MoviePy, and Streamlit for automated video editing.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">HuggingFace</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Whisper</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">MoviePy</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">AI</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Video Processing</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <a href="https://github.com/Aswinprasath31" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">GitHub &rarr;</a>
+                            <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Demo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-6 text-center">Other Projects</h3>
+                <div id="other-project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer project-card" data-project-id="employee-attrition">
+                        <h4 class="text-xl font-bold text-white mb-2">Employee Attrition Prediction</h4>
+                        <p class="text-slate-300 text-sm flex-grow">
+                            Logistic Regression-based prediction with explanation features. Streamlit dashboard showing probability and key insights for HR decision making.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Logistic Regression</span>
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <a href="https://github.com/Aswinprasath31" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Code &rarr;</a>
+                            <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Demo &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer project-card" data-project-id="redbus-scraper">
+                        <h4 class="text-xl font-bold text-white mb-2">RedBus Web Scraper + Filter App</h4>
+                        <p class="text-slate-300 text-sm flex-grow">
+                            Used Selenium to scrape RedBus listings and stored them in SQL database. Developed a filtering dashboard using Streamlit for enhanced user experience.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Selenium</span>
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Web Scraping</span>
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">SQL</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <a href="https://github.com/Aswinprasath31" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Code &rarr;</a>
+                            <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Demo &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer project-card" data-project-id="disease-prediction">
+                        <h4 class="text-xl font-bold text-white mb-2">Multiple Disease Prediction</h4>
+                        <p class="text-slate-300 text-sm flex-grow">
+                            Built multi-page Streamlit app to predict kidney, liver, and Parkinson's disease using Random Forest, Logistic Regression, and XGBoost algorithms.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Random Forest</span>
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">XGBoost</span>
+                            <span class="bg-slate-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Logistic Regression</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <a href="https://github.com/Aswinprasath31" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Code &rarr;</a>
+                            <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-sm font-medium">Demo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="py-20 section-dark-bg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white">Technical Skills</h2>
+                <p class="text-center mt-4 text-slate-300 max-w-2xl mx-auto">
+                    Comprehensive toolkit for data science, machine learning, and analytics.
+                </p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">💻</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Programming Languages</h3>
+                        <ul class="list-none p-0 text-slate-300 space-y-1">
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">📚</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Libraries & Frameworks</h3>
+                        <ul class="list-none p-0 text-slate-300 space-y-1">
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Matplotlib</li>
+                            <li>Scikit-learn</li>
+                            <li>Plotly</li>
+                            <li>Streamlit</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">🛠️</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Tools & Platforms</h3>
+                        <ul class="list-none p-0 text-slate-300 space-y-1">
+                            <li>Tableau</li>
+                            <li>Power BI</li>
+                            <li>Jupyter</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">🧠</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Machine Learning</h3>
+                        <ul class="list-none p-0 text-slate-300 space-y-1">
+                            <li>Logistic Regression</li>
+                            <li>Random Forest</li>
+                            <li>XGBoost</li>
+                            <li>NLP</li>
+                            <li>Sentiment Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">📊</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Data Visualization</h3>
+                        <ul class="list-none p-0 text-slate-300 space-y-1">
+                            <li>Tableau</li>
+                            <li>Power BI</li>
+                            <li>Matplotlib</li>
+                            <li>Plotly</li>
+                            <li>Data Storytelling</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">🔗</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Development & Others</h3>
+                        <ul class="list-none p-0 text-slate-300 space-y-1">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Selenium</li>
+                            <li>SQLite</li>
+                            <li>MoviePy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-6 text-center">Proficiency Levels</h3>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-slate-300 font-medium">Python</span>
+                            <span class="text-cyan-400 font-semibold">85%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-slate-300 font-medium">Machine Learning</span>
+                            <span class="text-cyan-400 font-semibold">80%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-slate-300 font-medium">SQL</span>
+                            <span class="text-cyan-400 font-semibold">75%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-slate-300 font-medium">Data Visualization</span>
+                            <span class="text-cyan-400 font-semibold">85%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Courses Section -->
+        <section id="certifications" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white">Certifications & Courses</h2>
+                <p class="text-center mt-4 text-slate-300 max-w-2xl mx-auto">
+                    Continuous learning and professional development in data science and AI innovation.
+                </p>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-6 text-center">Completed</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-semibold text-white">Certified Data Scientist</h4>
+                        <p class="text-cyan-400">Guvi</p>
+                        <p class="text-slate-300 mt-2">
+                            Covered Python, Pandas, SQL, Statistics, Machine Learning, Deep Learning, Tableau, Power BI, NLP, and End-to-End Project Deployment.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Deep Learning</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Tableau</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Power BI</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">NLP</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-semibold text-white">Certified Data Scientist Certification Training</h4>
+                        <p class="text-cyan-400">DATAMITES</p>
+                        <p class="text-sm text-slate-400 mt-1">Duration: 120 Hours</p>
+                        <p class="text-sm text-slate-400">Period: 25th Jan – 12th Jul, 2025</p>
+                        <p class="text-sm text-slate-400">Certificate No: 23250745531945</p>
+                        <p class="text-slate-300 mt-2">Accredited by reputed Certification Bodies across the globe.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Data Science</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Analytics</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">ML Algorithms</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Statistical Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-6 text-center">Ongoing</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-semibold text-white">AI Engineer</h4>
+                        <p class="text-cyan-400">DataMites</p>
+                        <p class="text-slate-300 mt-2">
+                            Specializing in Generative AI, LLMs, and AI Strategy.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Generative AI</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">LLMs</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">AI Strategy</span>
+                            <span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Neural Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Highlights Section -->
+        <section id="highlights" class="py-20 section-dark-bg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white">Key Highlights</h2>
+                <p class="text-center mt-4 text-slate-300 max-w-2xl mx-auto">
+                    Notable achievements and strengths that set me apart in the data science field.
+                </p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">⭐</div>
+                        <p class="text-slate-300 mt-2">DataMites Certified Data Scientist</p>
+                        <p class="text-sm text-slate-400">Completed comprehensive certification program covering all aspects of data science</p>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">🚀</div>
+                        <p class="text-slate-300 mt-2">6+ Real-World Data Projects</p>
+                        <p class="text-sm text-slate-400">Built and deployed diverse portfolio of machine learning and analytics projects</p>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">🎬</div>
+                        <p class="text-slate-300 mt-2">YouTube-Ready AI Video Editor</p>
+                        <p class="text-sm text-slate-400">Created innovative AutoVlogAI tool using cutting-edge open-source AI technologies</p>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="icon-box">📈</div>
+                        <p class="text-slate-300 mt-2">End-to-End ML Expertise</p>
+                        <p class="text-sm text-slate-400">Strong understanding of complete machine learning workflow from data to deployment</p>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto text-center">
+                    <div class="p-4 bg-cyan-700 rounded-lg shadow-md">
+                        <p class="text-4xl font-bold text-white">6+</p>
+                        <p class="text-sm text-cyan-100">Projects Deployed</p>
+                    </div>
+                    <div class="p-4 bg-cyan-700 rounded-lg shadow-md">
+                        <p class="text-4xl font-bold text-white">120+</p>
+                        <p class="text-sm text-cyan-100">Hours Certified</p>
+                    </div>
+                    <div class="p-4 bg-cyan-700 rounded-lg shadow-md">
+                        <p class="text-4xl font-bold text-white">2</p>
+                        <p class="text-sm text-cyan-100">Internships Completed</p>
+                    </div>
+                    <div class="p-4 bg-cyan-700 rounded-lg shadow-md">
+                        <p class="text-4xl font-bold text-white">3+</p>
+                        <p class="text-sm text-cyan-100">Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Get In Touch Section -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-16 border-t border-slate-700">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-bold text-3xl text-white mb-8">Get In Touch</h2>
+            <p class="text-center mt-4 text-slate-300 max-w-2xl mx-auto mb-12">
+                Ready to discuss data science opportunities and collaborations. I'm actively seeking data science opportunities and would love to discuss how I can contribute to your team.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Contact Info Column -->
+                <div class="bg-slate-800 p-8 rounded-lg shadow-lg text-left">
+                    <h3 class="text-xl font-semibold text-white mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-center text-slate-300">
+                            <span class="text-cyan-400 mr-3">📧</span> Email: <a href="mailto:aswinprasath1590@gmail.com" class="hover:text-cyan-400 transition-colors ml-2">aswinprasath1590@gmail.com</a>
+                        </p>
+                        <p class="flex items-center text-slate-300">
+                            <span class="text-cyan-400 mr-3">📞</span> Phone: +91 74483 26548
+                        </p>
+                        <p class="flex items-center text-slate-300">
+                            <span class="text-cyan-400 mr-3">📍</span> Location: Chennai, Tamil Nadu, India
+                        </p>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-white mt-8 mb-4">Connect With Me</h3>
+                    <div class="flex space-x-6 justify-start">
+                        <a href="https://aswinprasath31.github.io/" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-lg">Portfolio</a>
+                        <a href="https://github.com/Aswinprasath31" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-lg">GitHub</a>
+                        <a href="https://www.linkedin.com/in/aswinprasathv" target="_blank" class="text-cyan-400 hover:text-cyan-200 transition-colors text-lg">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div id="contact-form-section" class="bg-slate-800 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-white mb-4 text-center">Send a Message</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="First Name" class="w-full p-3 rounded-md bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:ring-cyan-500 focus:border-cyan-500">
+                            <input type="text" placeholder="Last Name" class="w-full p-3 rounded-md bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:ring-cyan-500 focus:border-cyan-500">
+                        </div>
+                        <input type="email" placeholder="Email" class="w-full p-3 rounded-md bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:ring-cyan-500 focus:border-cyan-500">
+                        <input type="text" placeholder="Subject" class="w-full p-3 rounded-md bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:ring-cyan-500 focus:border-cyan-500">
+                        <textarea placeholder="Message" rows="5" class="w-full p-3 rounded-md bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:ring-cyan-500 focus:border-cyan-500"></textarea>
+                        <button type="submit" class="w-full bg-cyan-600 text-white py-3 rounded-lg font-semibold hover:bg-cyan-700 transition-colors shadow-md">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Footer Section -->
+            <div class="mt-20 border-t border-slate-700 pt-8 text-center">
+                <h3 class="text-xl font-bold text-white mb-2">Aswin Prasath V</h3>
+                <p class="text-slate-400 max-w-2xl mx-auto">
+                    Aspiring Data Scientist passionate about turning data into actionable insights and building innovative machine learning solutions.
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center space-x-6 text-sm">
+                    <p class="text-slate-400">Chennai, Tamil Nadu, India</p>
+                    <p class="text-slate-400">aswinprasath1590@gmail.com</p>
+                    <p class="text-slate-400">+91 74483 26548</p>
+                </div>
+                <div class="mt-8 flex justify-center space-x-6">
+                    <a href="#about" class="text-slate-300 hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#experience" class="text-slate-300 hover:text-cyan-400 transition-colors">Experience</a>
+                    <a href="#projects" class="text-slate-300 hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#skills" class="text-slate-300 hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#contact" class="text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
+                </div>
+                <p class="mt-12 text-sm text-slate-500">&copy; 2025 Aswin Prasath V. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal-backdrop fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none">
+        <div id="modal-content-wrapper" class="modal-content bg-slate-800 rounded-lg shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto transform scale-95">
+            <div class="sticky top-0 bg-slate-800 p-4 border-b border-slate-700 flex justify-between items-center">
+                <h3 id="modal-title" class="text-2xl font-bold text-white"></h3>
+                <button id="modal-close-button" class="text-slate-400 hover:text-white text-3xl leading-none">&times;</button>
+            </div>
+            <div class="p-6">
+                <p id="modal-description" class="text-slate-300 mb-4"></p>
+                <h4 class="font-semibold text-white mb-2">Technologies Used:</h4>
+                <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+                <div class="mt-6 flex justify-end space-x-4">
+                    <a id="modal-github-link" href="#" target="_blank" class="bg-slate-700 text-white px-4 py-2 rounded-lg hover:bg-slate-600 transition-colors text-sm font-medium hidden">GitHub</a>
+                    <a id="modal-demo-link" href="#" target="_blank" class="bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-cyan-700 transition-colors text-sm font-medium hidden">Demo</a>
+                    <a id="modal-code-link" href="#" target="_blank" class="bg-slate-700 text-white px-4 py-2 rounded-lg hover:bg-slate-600 transition-colors text-sm font-medium hidden">Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Project data for modals
+            const allProjects = {
+                "securecheck": {
+                    title: 'SecureCheck – Python-SQL Digital Ledger for Police Logs',
+                    description: 'Built a centralized Streamlit dashboard for recording, analyzing, and exporting police check post logs with SQLite backend and real-time search and filtering capabilities. This project significantly improved the efficiency and accuracy of police record management by digitizing a manual process, enabling quick data retrieval and analysis.',
+                    tech: ['Python', 'Streamlit', 'SQLite', 'SQL', 'Dashboard'],
+                    github: 'https://github.com/Aswinprasath31', // Updated GitHub link
+                    demo: '#' // Replace with actual Demo link
+                },
+                "aiecho": {
+                    title: 'AI Echo – ChatGPT User Review Sentiment Analyzer',
+                    description: 'Performed Natural Language Processing (NLP) on user reviews to classify sentiments (positive, negative, neutral). Trained multiple machine learning models (e.g., Logistic Regression, SVM) and deployed the best-performing model via a Streamlit application for real-time sentiment analysis. This tool provides businesses with immediate insights into customer feedback.',
+                    tech: ['NLP', 'Machine Learning', 'Streamlit', 'Sentiment Analysis', 'Python'],
+                    github: 'https://github.com/Aswinprasath31', // Updated GitHub link
+                    demo: '#' // Replace with actual Demo link
+                },
+                "autovlogai": {
+                    title: 'AutoVlogAI – AI-Powered Motovlog Editor',
+                    description: 'An innovative tool that automates video editing for motovlogs. It integrates Whisper for accurate audio transcription, uses emotion detection to analyze the mood of the transcribed text, automatically selects and adds suitable background music to match the mood, and renders the final video using MoviePy. The entire process is controlled via a Streamlit interface, making complex video editing accessible to content creators.',
+                    tech: ['HuggingFace', 'Whisper', 'MoviePy', 'Streamlit', 'AI', 'Video Processing'],
+                    github: 'https://github.com/Aswinprasath31', // Updated GitHub link
+                    demo: '#' // Replace with actual Demo link
+                },
+                "employee-attrition": {
+                    title: 'Employee Attrition Prediction',
+                    description: 'Developed a Logistic Regression-based machine learning model to predict employee attrition. The project includes explanation features to identify key factors contributing to an employee\'s likelihood of leaving. A Streamlit dashboard visualizes the probability of attrition and provides actionable insights for HR decision-making, helping companies proactively address retention issues.',
+                    tech: ['Logistic Regression', 'Streamlit', 'Python', 'Pandas', 'Scikit-learn'],
+                    code: 'https://github.com/Aswinprasath31', // Updated Code link
+                    demo: '#' // Replace with actual Demo link
+                },
+                "redbus-scraper": {
+                    title: 'RedBus Web Scraper + Filter App',
+                    description: 'A two-part project consisting of a web scraper and a filtering application. Selenium was used to scrape bus route and pricing data from RedBus.in, which was then stored in an SQL database. A Streamlit dashboard was developed on top of this data, allowing users to filter and search for bus listings based on various criteria, significantly enhancing the user experience for travel planning.',
+                    tech: ['Selenium', 'Web Scraping', 'SQL', 'Streamlit', 'Python'],
+                    code: 'https://github.com/Aswinprasath31', // Updated Code link
+                    demo: '#' // Replace with actual Demo link
+                },
+                "disease-prediction": {
+                    title: 'Multiple Disease Prediction',
+                    description: 'Built a multi-page Streamlit application that integrates pre-trained machine learning models to predict the likelihood of multiple diseases, including kidney disease, liver disease, and Parkinson\'s disease. The app utilizes various algorithms such as Random Forest, Logistic Regression, and XGBoost, providing an accessible tool for preliminary health assessments based on user-inputted metrics.',
+                    tech: ['Random Forest', 'XGBoost', 'Logistic Regression', 'Streamlit', 'Python'],
+                    code: 'https://github.com/Aswinprasath31', // Updated Code link
+                    demo: '#' // Replace with actual Demo link
+                }
+            };
+
+            const projectCards = document.querySelectorAll('.project-card');
+            const modal = document.getElementById('project-modal');
+            const modalContentWrapper = document.getElementById('modal-content-wrapper');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            const modalTech = document.getElementById('modal-tech');
+            const modalGithubLink = document.getElementById('modal-github-link');
+            const modalDemoLink = document.getElementById('modal-demo-link');
+            const modalCodeLink = document.getElementById('modal-code-link');
+            const modalCloseButton = document.getElementById('modal-close-button');
+
+            projectCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const projectId = card.dataset.projectId;
+                    const project = allProjects[projectId];
+
+                    if (project) {
+                        modalTitle.textContent = project.title;
+                        modalDescription.textContent = project.description;
+                        modalTech.innerHTML = project.tech.map(t => `<span class="bg-cyan-700 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">${t}</span>`).join('');
+
+                        // Reset link visibility
+                        modalGithubLink.classList.add('hidden');
+                        modalDemoLink.classList.add('hidden');
+                        modalCodeLink.classList.add('hidden');
+
+                        // Set links if they exist
+                        if (project.github) {
+                            modalGithubLink.href = project.github;
+                            modalGithubLink.classList.remove('hidden');
+                        }
+                        if (project.demo) {
+                            modalDemoLink.href = project.demo;
+                            modalDemoLink.classList.remove('hidden');
+                        }
+                        if (project.code) {
+                            modalCodeLink.href = project.code;
+                            modalCodeLink.classList.remove('hidden');
+                        }
+
+                        modal.classList.remove('opacity-0', 'pointer-events-none');
+                        modalContentWrapper.classList.remove('scale-95');
+                    }
+                });
+            });
+
+            function closeModal() {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modalContentWrapper.classList.add('scale-95');
+            }
+
+            modalCloseButton.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
